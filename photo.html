@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aliza Mahmood</title>
+	<link rel="stylesheet" type="text/css" href="pstyle.css"></link>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+	 <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+	<script src="script/script.js"></script>
+</head>
+
+<body>
+<div class="sketch">
+
+	<!-- HEADER -->
+
+	<div class="header">
+
+		<ul>
+			  <li id="left"><a href="index.html" >Aliza Mahmood</a></li>			 
+			  <li style="float: right;"><a href="#info" style="padding-left: 30px;">Info</a></li>
+			  <li style="float: right;"><a href="about.html" style="padding-left: 30px;" >About</a></li>
+			  <li style="float: right;"><a href="photo.html" style="padding-left: 30px;"><u style="text-underline-position: under; color: #F20587;">Photo</u></a></li>
+			  <li style="float: right;"><a href="index.html" style="padding-left: 30px;">Design</a></li> 
+		</ul>
+	</div>
+
+
+<!-- <p class="comingsoon"><b><i>Coming Soon!</i></b></p> -->
+	
+
+<!-- ---- -->
+
+
+
+				<p class="photohead" style="text-align:left; padding-left: 6vw;"><b>Photographs</b></p>
+
+				<div class="row">
+				  
+				  <div class="column">
+				    <img src="image/photo/a.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				    <div class="names">My Window</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/b.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				    <div class="names">Colorful Neighbors</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/c.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				    <div class="names">Sunset in a Foreign Land</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/d.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				    <div class="names">Downtown Stroll</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/e.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				    <div class="names">Sunlit Patterns</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/f.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+				    <div class="names">Exquisite Carbohydrates</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/g.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+				    <div class="names">Stranger Soup</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/h2.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+				    <div class="names">Fall Leaves & French Cafes</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/i.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+				    <div class="names">Purple People</div>
+				  </div>
+				  
+				  <div class="column">
+				    <img src="image/photo/j2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+				    <div class="names">A Door in New York City</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/k.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+				    <div class="names">Hot Tea on a Cold Day</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/l.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+				    <div class="names">The White Arch</div>
+				  </div>
+
+				   <div class="column">
+				    <img src="image/photo/m.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+				    <div class="names">Coffee and Books</div>
+				  </div>
+
+				  <div class="column">
+				    <img src="image/photo/n.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+				    <div class="names">The Day Comes to a Colorful Close</div>
+				  </div>
+
+				   <div class="column">
+				    <img src="image/photo/o.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+				    <div class="names">The Extraordinary</div>
+				  </div>
+
+
+
+
+
+
+
+				</div>
+
+				<div id="myModal" class="modal">
+				  <span class="close cursor" onclick="closeModal()">&times;</span>
+				  <div class="modal-content">
+
+				    <div class="mySlides">
+				      <div class="numbertext">1 / 15</div>
+				      <img src="image/photo/a.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>East Village NY,&nbsp;&nbsp;Feb '20</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>My Window</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">2 / 15</div>
+				      <img src="image/photo/b.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Downtown Manhattan,&nbsp;&nbsp;Aug '18</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Colorful Neighbors</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">3 / 15</div>
+				      <img src="image/photo/c.jpg" style="width:100%">
+				     <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Copenhagen,&nbsp;&nbsp;Mar '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Sunset in a Foreign Land</p></div>     	
+				  		</div>
+				    </div>
+
+				    
+				    <div class="mySlides">
+				      <div class="numbertext">4 / 15</div>
+				      <img src="image/photo/d.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Manhattan,&nbsp;&nbsp;Feb '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Downtown Stroll</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">5 / 15</div>
+				      <img src="image/photo/e.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Union Square NY,&nbsp;&nbsp;Oct '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Sunlit Patterns</p></div>     	
+				  		</div>
+				    </div>
+				    
+				    <div class="mySlides">
+				      <div class="numbertext">6 / 15</div>
+				      <img src="image/photo/f.jpg" style="width:100%">
+				     <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>SoHo NY,&nbsp;&nbsp;Feb '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Exquisite Carbohydrates</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">7 / 15</div>
+				      <img src="image/photo/g.jpg" style="width:100%">
+				     <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Times Square NY,&nbsp;&nbsp;Sep '18</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Stranger Soup</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">8 / 15</div>
+				      <img src="image/photo/h2.jpg" style="width:100%">
+				     <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Union Square NY,&nbsp;&nbsp;Oct '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Fall Leaves & French Cafes</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">9 / 15</div>
+				      <img src="image/photo/i.jpg" style="width:100%">
+				     <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Times Square NY,&nbsp;&nbsp;Sep '18</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Purple People</p></div>     	
+				  		</div>
+				    </div>
+				    
+				    <div class="mySlides">
+				      <div class="numbertext">10 / 15</div>
+				      <img src="image/photo/j2.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>SoHo NY,&nbsp;&nbsp;Feb '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>A Door in New York City</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">11 / 15</div>
+				      <img src="image/photo/k.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Downtown Manhattan,&nbsp;&nbsp;Jan '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Hot Tea on a Cold Day</p></div>     	
+				  		</div>
+				    </div>
+				    
+				    <div class="mySlides">
+				      <div class="numbertext">12 / 15</div>
+				      <img src="image/photo/l.jpg" style="width:100%">
+				     <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Austin TX,&nbsp;&nbsp;Dec '18</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>The White Arch</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">13 / 15</div>
+				      <img src="image/photo/m.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Union Square NY,&nbsp;&nbsp;Feb '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>Coffee and Books</p></div>     	
+				  		</div>
+				    </div>
+				   
+				    <div class="mySlides">
+				      <div class="numbertext">14 / 15</div>
+				      <img src="image/photo/n.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>Downtown Manhattan,&nbsp;&nbsp;Jan '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>The Day Comes to a Colorful Close</p></div>     	
+				  		</div>
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">15 / 15</div>
+				      <img src="image/photo/o.jpg" style="width:100%">
+				      <div class="subs" style="width:100%">
+				      	<div class="sub2" style="text-align: left;"><p><i>SoHo NY,&nbsp;&nbsp;Feb '19</i></p></div>
+				      	<div class="sub2" style="text-align: right;"><p>The Extraordinary</p></div>     	
+				  		</div>
+				    </div>
+
+		
+				   
+
+				    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				  </div>
+				</div>
+
+
+<!-- ----- -->
+
+
+	<!-- FOOTER -->
+
+	<div class="footer">
+
+		<hr size="1" color="black">
+
+		<div class="footertext" id="info">	
+
+			<div class="columns">
+				<p><u style="text-underline-position: under; letter-spacing: 0.1em;">Education</u></p>
+				<p><b>MFA Design and Technology</b>
+					<br>Parsons School of Design, NY
+					<br>August 2018 – May 2020
+					<br>
+					<br><b>Bachelor of Industrial Design</b>
+					<br>NUST, Pakistan
+					<br>September 2015 - June 2018
+					<br>
+					<br><b>Study Abroad Scholarship</b>
+					<br>METU, Turkey
+					<br>September 2016 - May 2017
+				</p>
+				<p><u style="text-underline-position: under; letter-spacing: 0.1em;">Awards</u></p>
+				<p><b>Provost's Scholarship</b>
+					<br>Parsons, 2018 – 2020
+					<br>
+					<br><b>National Furniture Design Competition</b>
+					<br>UG Students Winner,<br>Turkey 2017
+					<br>
+					<br><b>Mevlana Scholarship</b>
+					<br>METU, Turkey 2016 - 2017
+					<br>
+					<br><b>NUST Merit Scholarship</b>
+					<br>NUST, Pakistan 2015 - 2016
+				</p>
+			</div>
+
+
+			<div class="columns">
+				<p><u style="text-underline-position: under; letter-spacing: 0.1em;">Experience</u></p>
+				<p><b>Design Publication Editor</b>
+					<br>Hindsight Reader
+					<br>Parsons School of Design, NY
+					<br>April - May 2020
+					<br>
+					<br><b>Industrial Designer, Designer Researcher</b>
+					<br>Ideate Innovation
+					<br>Islamabad, Pakistan
+					<br>June - August 2019
+					<br>
+					<br><b>Design Resident</b>
+					<br>United States Holocaust Memorial Museum
+					<br>Washington, DC
+					<br>May 2019
+					<br>
+					<br><b>Designer - Collab</b>
+					<br>National Gallery of Denmark, Royal Danish Academy of Fine Arts
+					<br>Copenhagen, Denmark
+					<br>March 2019
+					<br>
+					<br><b>Product Design Intern</b>
+					<br>Orenda Project
+					<br>Islamabad, Pakistan
+					<br>July - August 2017
+				</p>
+			</div>
+
+
+			<div class="columns">
+				<p><u style="text-underline-position: under; letter-spacing: 0.1em;">Skills</u></p>
+					<p><b>Concept</b><br>Ideation, Iteration, Sketching, Design Research, Writing<br>
+					<br><b>Digital</b><br>Adobe Creative Cloud, HTML/CSS, CAD Modelling, Rendering, Technical Drawings, Product Animation<br>
+					<br><b>Physical</b><br>Prototyping, Woodwork, Arduino UNO, E-textiles, Soldering
+				</p>
+			</div>
+
+
+			<div class="columns">
+				<p><u style="text-underline-position: under; letter-spacing: 0.1em;">Contact</u></p>
+				<p><b><u style="text-underline-position: under;"><a href="mailto:alizam@newschool.edu">alizam@newschool.edu</a></u></b>
+					<br><a href="https://www.linkedin.com/in/aliza-mahmood-9519bb177/" class="linkedin"><i style="font-size:19px; padding-top: 1.25vh;" class="fa">&#xf0e1;</i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/alizamahmood/" class="instagarm"><i style="font-size:19px; padding-top: 1.25vh;" class="fa"><b class="instabold">&#xf16d;</b></i></a>
+					<br>
+					<br>© 2020 Aliza Mahmood
+					<br><hr size="1" color="black" width="90%" style="float: left;">
+					<br>This website is made in<br>HTML and CSS only.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- 	↑ -->
+
+<button onclick="topFunction()" id="myBtn" style="float: center;"><b>Back to Top</b></button>
+</div>
+
+<script>
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// ---
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+</body>
+</html>
